@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-container {
+        @apply px-9 py-16 grid grid-cols-1 gap-4 items-center justify-items-center text-center text-base font-spartan min-h-screen  md:grid-cols-2 md:grid-rows-[min-content_1fr] md:items-start md:gap-0;
+    }
+    
+
+    /* try to change the width of the item and not from the containers */
+
+    .rating-container {
+        @apply bg-LightGrayishMagenta w-full pt-3 pb-2 font-bold text-DarkMagenta rounded-lg mb-3 px-8 md:pt-5 md:pb-3 md:mb-4 md:flex md:gap-6 md:max-w-[420px];
+    }
+
+    .rating-container > span {
+        @apply shrink-0
+    }
+
+    .star-container {
+        @apply flex w-full justify-center gap-2 mb-2 md:w-fit;
+    }
+
+    .item-review {
+        @apply bg-DarkMagenta text-white text-[15px] text-left px-8 pt-9 pb-5 rounded-lg mb-4 leading-5 max-w-[325px] md:m-[0_auto] md;
+    }
+
+    .item-review-buyer {
+        @apply flex justify-start items-center gap-6;
+    }
+    
+    .item-review-buyer-image {
+        @apply inline-block h-10  w-full object-cover rounded-full;
+    }
+
+
+}
